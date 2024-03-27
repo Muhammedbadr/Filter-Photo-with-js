@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color:  #100744 ;
+}
+.container{
+    background-color:rgb(0, 51, 105);
+    width:80vw;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    position: relative; /* Add position relative */
+    top: 20px;
+    
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+.images img , canvas{
+    
+    max-width: 45vw;
+    max-height: 60vh;
+    min-width: 35vw;
+    min-height: 25vh;
+    border-radius: 3px;
+    
+}
+.upload input{
+    display: none;
+    
+}
+
+.upload label{
+    padding: 8px 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 1px dashed whitesmoke;}
+
+.filter ul ,.filter ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+
+}
+.filter ul li{
+    gap: 15px;
+}
+.filter ul li label{
+    color: white;
+}
+.filter ul li:last-child{
+    flex-direction: row;
+    justify-content: space-around  ;
+}
+.filter ul li a, span{
+    color: white;
+    padding: 10px 20px;
+    background: green;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 650px){
+    .container{
+         grid-template-columns: 1fr;
+         gap: 50px;
+    }
+    .images img,canvas{
+    max-width: 80vw;
+    }
+    .filter ul 
+    {
+            gap: 25px;
+        }
+        .filter ul li{
+            gap: 15px;
+            font-size: 13px;
+    }
+}
